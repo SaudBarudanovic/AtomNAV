@@ -1,5 +1,5 @@
 # AtomNAV
-An Atom keymap snippet that enables you to navigate through, select and delete (both with backspace and delete) subwords (works with camelCase, snake_case, kebab-case and PascalCase)
+An Atom keymap snippet that enables you to navigate through, select, and delete (both with backspace and delete) subwords (works with camelCase, snake_case, kebab-case and PascalCase)
 
 ### Add the following snippet to your Atom's keymap.cson file:
 ```
