@@ -11,4 +11,23 @@ An Atom keymap snippet that enables you to navigate through, select, and delete 
   'ctrl-shift-right': 'editor:select-to-next-subword-boundary'
   'ctrl-shift-left': 'editor:select-to-previous-subword-boundary'
 ```
+
+# VSCode
+Achieve the same functionality in VSCode by editing your "keybindings.json" file, and adding the following keymaps:
+```
+[
+    { "key": "ctrl+right",          "command": "cursorWordPartRight",
+        "when": "textInputFocus" },
+    { "key": "ctrl+shift+right",    "command": "cursorWordPartRightSelect",
+        "when": "textInputFocus" },
+    { "key": "ctrl+left",           "command": "cursorWordPartStartLeft",
+        "when": "textInputFocus" },
+    { "key": "ctrl+shift+left",      "command": "cursorWordPartStartLeftSelect",
+        "when": "textInputFocus" },
+    { "key": "ctrl+backspace",       "command": "deleteWordPartLeft",
+        "when": "textInputFocus && !editorReadonly" },
+    { "key": "ctrl+delete",             "command": "deleteWordPartRight",
+        "when": "textInputFocus && !editorReadonly" }
+]
+```
 ### That's it! Enjoy your subword ctrl navigations and deletions!
