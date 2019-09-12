@@ -22,9 +22,9 @@ Achieve the same functionality in VSCode by editing your "keybindings.json" file
         "when": "textInputFocus" },
     { "key": "ctrl+left",           "command": "cursorWordPartStartLeft",
         "when": "textInputFocus" },
-    { "key": "ctrl+shift+left",      "command": "cursorWordPartStartLeftSelect",
+    { "key": "ctrl+shift+left",     "command": "cursorWordPartStartLeftSelect",
         "when": "textInputFocus" },
-    { "key": "ctrl+backspace",       "command": "deleteWordPartLeft",
+    { "key": "ctrl+backspace",      "command": "deleteWordPartLeft",
         "when": "textInputFocus && !editorReadonly" },
     { "key": "ctrl+delete",             "command": "deleteWordPartRight",
         "when": "textInputFocus && !editorReadonly" }
