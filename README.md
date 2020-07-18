@@ -14,6 +14,7 @@ An Atom keymap snippet that enables you to navigate through, select, and delete 
 
 # VSCode
 Achieve the same functionality in VSCode by editing your "keybindings.json" file, and adding the following keymaps:
+## Windows:
 ```
 [
     { "key": "ctrl+right",          "command": "cursorWordPartRight",
@@ -27,6 +28,23 @@ Achieve the same functionality in VSCode by editing your "keybindings.json" file
     { "key": "ctrl+backspace",      "command": "deleteWordPartLeft",
         "when": "textInputFocus && !editorReadonly" },
     { "key": "ctrl+delete",         "command": "deleteWordPartRight",
+        "when": "textInputFocus && !editorReadonly" }
+]
+```
+## macOS:
+```
+[
+    { "key": "cmd+right",          "command": "cursorWordPartRight",
+        "when": "textInputFocus" },
+    { "key": "cmd+shift+right",    "command": "cursorWordPartRightSelect",
+        "when": "textInputFocus" },
+    { "key": "cmd+left",           "command": "cursorWordPartStartLeft",
+        "when": "textInputFocus" },
+    { "key": "cmd+shift+left",     "command": "cursorWordPartStartLeftSelect",
+        "when": "textInputFocus" },
+    { "key": "cmd+backspace",      "command": "deleteWordPartLeft",
+        "when": "textInputFocus && !editorReadonly" },
+    { "key": "cmd+delete",         "command": "deleteWordPartRight",
         "when": "textInputFocus && !editorReadonly" }
 ]
 ```
